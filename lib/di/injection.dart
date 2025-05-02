@@ -1,0 +1,8 @@
+import 'package:get_it/get_it.dart';
+import 'package:injectable/injectable.dart';
+import 'package:multi_modular_flutter_project/di/injection.config.dart';
+
+final getIt = GetIt.instance;
+
+@InjectableInit()
+void configureInjection() => getIt.init();
