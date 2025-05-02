@@ -5,4 +5,4 @@ import 'package:multi_modular_flutter_project/di/injection.config.dart';
 final getIt = GetIt.instance;
 
 @InjectableInit()
-void configureInjection() => getIt.init();
+void configureInjection(String? environment) => getIt.init(environment: environment);
