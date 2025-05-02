@@ -1,0 +1,4 @@
+name: multi_modular_flutter_project
+packages:
+  - core/**
+  - features/**
