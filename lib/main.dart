@@ -1,4 +1,5 @@
 import 'package:app_settings/provider/app_settings_provider.dart';
+import 'package:datastore/provider/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
@@ -76,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final appSettingsProvider = getIt<AppSettingsProvider>();
+    final sessionProvider = getIt<SessionProvider>();
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -108,6 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
              Text("App Language: ${appSettingsProvider.getAppLanguage()}"),
             Text(
               "App Theme: ${appSettingsProvider.getThemeType()}",
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text("Session Client Id: ${sessionProvider.getClientId()}"),
+            Text(
+              "Session userId: ${sessionProvider.getUserId()}",
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
