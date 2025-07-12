@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
-import '../constants/constants.dart';
+import '../constants/api_constants.dart';
 
 class DioFactory {
   DioFactory();
@@ -11,11 +11,11 @@ class DioFactory {
     Dio dio = Dio();
 
     Map<String, String> headers = {
-      Constants.contentType: Constants.applicationJson,
-      Constants.accept: Constants.applicationJson,
-      Constants.authorization: "Bearer ", // TODO: add access token
-      Constants.defaultLang: "app_language", // TODO: add app language
-      Constants.clientId: "app_client_id", // TODO: add client id
+      ApiConstants.contentType: ApiConstants.applicationJson,
+      ApiConstants.accept: ApiConstants.applicationJson,
+      ApiConstants.authorization: "Bearer ", // TODO: add access token
+      ApiConstants.defaultLang: "app_language", // TODO: add app language
+      ApiConstants.clientId: "app_client_id", // TODO: add client id
     };
 
     dio.options = BaseOptions(

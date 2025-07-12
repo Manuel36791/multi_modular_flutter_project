@@ -1,5 +1,5 @@
-class Constants {
-  const Constants._();
+class ApiConstants {
+  const ApiConstants._();
 
   // Basic headers
   static const String applicationJson = "application/json";

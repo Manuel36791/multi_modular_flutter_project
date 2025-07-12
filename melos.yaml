@@ -15,12 +15,16 @@ command:
       injectable: ^2.5.0
       json_annotation: ^4.9.0
       pretty_dio_logger: ^1.4.0
+      retrofit: ^4.4.2
+      fpdart: ^1.1.1
+      connectivity_plus: ^6.1.4
 
     dev_dependencies:
       flutter_lints: ^5.0.0
       json_serializable: ^6.9.5
       build_runner: ^2.4.15
       injectable_generator: ^2.7.0
+      retrofit_generator: ^9.1.9
 
 scripts:
   clean: melos clean
